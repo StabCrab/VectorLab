@@ -591,14 +591,12 @@ MyVector<ValueType> MyVector<ValueType>::sortedSquares(SortedStrategy strategy)
             if (abs(this->_data[i]) >= abs(this->_data[j]))
             {
                 vec[k] = this->_data[i] * this->_data[i];
-                //std:: cout << vector._data[k] << std::endl;
                 i++;
                 k--;
             }
             else
             {
                 vec[k] = this->_data[j] * this->_data[j];
-                //std:: cout << vector._data[k] << std:: endl;
                 j--;
                 k--;
             }
